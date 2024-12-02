@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 
-app.get('/sjk-webserver.vercel.app', (req, res) => {
+// Endpoint untuk route '/'
+app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
 
-app.listen(port, () => {
-    console.log(`Server berjalan di https://sjk-webserver.vercel.app/`);
-});
+// Ekspor aplikasi untuk digunakan oleh Vercel
+module.exports = app;
