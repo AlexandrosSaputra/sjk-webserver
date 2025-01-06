@@ -3,7 +3,7 @@ const app = express();
 
 // Endpoint untuk route '/'
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.send('Hello, World. This is Alex!');
 });
 
 // Ekspor aplikasi untuk digunakan oleh Vercel
